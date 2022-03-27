@@ -83,12 +83,12 @@ public class TV
 		return this.marca;
 	}
 	
-	public int getNumTV()
+	public static int getNumTV()
 	{
 		return numTV;
 	}
 	
-	public void setNumTV(int ntv)
+	public static void setNumTV(int ntv)
 	{
 		numTV = ntv;
 	}
