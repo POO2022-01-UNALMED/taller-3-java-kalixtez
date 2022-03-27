@@ -13,7 +13,7 @@ public class TV
 	
 	private Control control;
 	
-	TV(Marca n_marca, boolean n_estado)
+	public TV(Marca n_marca, boolean n_estado)
 	{
 		this.marca = n_marca;
 		this.estado = n_estado;
@@ -24,7 +24,7 @@ public class TV
 		numTV++;
 	}
 	
-	void setCanal(int n_canal)
+	public void setCanal(int n_canal)
 	{
 		if(this.estado)
 		{
@@ -33,22 +33,22 @@ public class TV
 		}
 	}
 	
-	void setControl(Control n_control)
+	public void setControl(Control n_control)
 	{
 		this.control = n_control;
 	}
 	
-	void setPrecio(int n_precio)
+	public void setPrecio(int n_precio)
 	{
 		this.precio = n_precio;
 	}
 	
-	void setMarca(Marca n_marca)
+	public void setMarca(Marca n_marca)
 	{
 		this.marca = n_marca;
 	}
 	
-	void setVolumen(int n_vol)
+	public void setVolumen(int n_vol)
 	{
 
 		if(this.estado)
@@ -58,47 +58,52 @@ public class TV
 		}
 	}
 	
-	int getCanal() 
+	public int getCanal() 
 	{
 		return this.canal;
 	}
 	
-	int getVolumen()
+	public int getVolumen()
 	{
 		return this.volumen;
 	}
 	
-	int getPrecio()
+	public int getPrecio()
 	{
 		return this.precio;
 	}
 	
-	Control getControl()
+	public Control getControl()
 	{
 		return this.control;
 	}
 	
-	Marca getMarca()
+	public Marca getMarca()
 	{
 		return this.marca;
 	}
 	
-	int getNumTV()
+	public int getNumTV()
 	{
 		return numTV;
 	}
 	
-	void turnOn()
+	public void setNumTV(int ntv)
+	{
+		numTV = ntv;
+	}
+	
+	public void turnOn()
 	{
 		this.estado = true;
 	}
 	
-	void turnOff()
+	public void turnOff()
 	{
 		this.estado = false;
 	}
 	
-	void volumenUp()
+	public void volumenUp()
 	{
 
 		if(this.estado)
@@ -108,7 +113,7 @@ public class TV
 		}
 	}
 	
-	void volumenDown()
+	public void volumenDown()
 	{
 
 		if(this.estado)
@@ -118,7 +123,7 @@ public class TV
 		}
 	}
 	
-	void canalUp()
+	public void canalUp()
 	{
 
 		if(this.estado)
@@ -128,7 +133,7 @@ public class TV
 		}
 	}
 	
-	void canalDown()
+	public void canalDown()
 	{
 
 		if(this.estado)
@@ -138,7 +143,7 @@ public class TV
 		}
 	}
 	
-	boolean getEstado()
+	public boolean getEstado()
 	{
 		return this.estado;
 	}
